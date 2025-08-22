@@ -1,4 +1,5 @@
 import { getWeather } from "./weather.js";
+import React from "react";
 
 function App() {
   const [weather, setWeather] = React.useState(null);
@@ -56,4 +57,4 @@ function App() {
   );
 }
 
-ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+export default App;

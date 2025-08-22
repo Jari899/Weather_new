@@ -7,7 +7,7 @@
  */
 export async function getWeather(query) {
   try {
-    const response = await fetch(dir
+    const response = await fetch(
       `https://api.openweathermap.org/data/2.5/weather?q=${encodeURIComponent(
         query
       )}&appid=${process.env.REACT_APP_API_KEY}&units=metric`
